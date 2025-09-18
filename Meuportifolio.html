@@ -1,80 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="css/implemento.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu site</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Meu Portifólio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
-  <body>
 
+  <body>
    <!-- Cabeçalho com logo -->
   <header>
-     <section id="hero">
-       <div align="center">
-    <h1><img src="img/Is.png" alt="Meu site" width="300"></h1>
-
-    <p>Seja Bem-vindo ao meu site!</p>
-    <P>✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭</p>
-  </header>
-  </div>
-</section>
+    <div class="interface">
+    <section class="logotipo-cabecalho">
+      <img src="img/newicon.png" alt="logotipo do site" width="150">
+    </section>
 
   <!-- Menu de navegação -->
-  <nav>
+  <nav class=" menu-navegação">
     <ul>
       <li><a href="#hero">Início</a></li>
       <li><a href="#about">Sobre Mim</a></li>
       <li><a href="#projects">Projetos</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
-    <P>✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭✧. ┊ ⁭</p>
-  </nav>
-  
+      <li><a href="#contact"><button>Contato</button></a></li>
+  </ul>
+</nav>
 
-  <!-- Hero / Apresentação -->
-  <section id="about">
-    <div align="center">
-    <h2><img src="img/avatarbella.png"alt="avatarbella" width="190"></h2>
-      <p>Olá, eu sou Isabelle mendes!</p> 
-    <p>Sou desenvolvedora web em formação com interesse em criar projetos novos.</p>
+  </div>
+  </header>
+
+  <main>
+    <!-- Hero / Apresentação> -->
+     <section class="hero" id="hero">
+      <div class="interface">
+        <div class="img hero">
+          <img src="img/avatarAtualizado.png" alt="imagem de Apresentação" width="300">
+        </div>
+
+        <div class="txt-hero">
+          <h1>Olá, eu sou Isabelle Mendes!<span> Seja bem vindo ao meu portifólio.</span></h1>
+          <a href="#"><button>Entre em Contato</button></a>
+        </div>
+
+      </div>
+     </section>
+
+     <!-- Sobre Mim> -->
+      <section class ="sobre-mim" id="about">
+        <div class = "interface">
+        <div class = "txt-sobre">
+          <h1 class="titulo-sobre">Sobre <span>Mim</span></h1>
+
+          <p>
+              Tenho 19 anos e já tive a oportunidade de atuar em pequenos projetos digitais.
+              Atualmente curso Análise e Desenvolvimento de Sistemas na Universidade Newton Paiva e também dou aulas particulares, o que tem fortalecido minhas habilidades de comunicação, organização e didática.
+              Busco uma oportunidade de estágio na área de tecnologia para aplicar meus conhecimentos, aprender com profissionais experientes e dar os primeiros passos para construir uma carreira sólida como desenvolvedora.
+
+          </p>
+          
+          <div class="btn-redes">
+            <a href="https://www.instagram.com/isabellemendes99/"><button><i class="bi bi-instagram"></i></button></a>
+           <a href="https://github.com/izzydrafts"><button><i class="bi bi-github"></i></button></a>
+          </div>
+
+        </div>
+
+        <div class=" img-sobre">
+          <img src="img/avatarSobre.png" alt="imagem sobre mim" width="600">
+        </div>
+
+
+        </div>
+      </section>
+      
+
+  <!-- Projetos -->
+    <section class="projects" id="projects">
+      <div class="interface">
+        <div class="meus-projetos">
+        <h1 class="titulo-seção">Meus <span> Projetos</span><i class="bi bi-laptop"></i></h1>
+      
+        <p> Projeto 1 - Sistema de Gerenciamento de Livraria: Sistema feito para gerenciar 
+        compras ou empréstimos de livros, usuários, funcionários, fornecedores,etc. Feito no Intellij IDEA
+         e integrado com o Banco de Dados MSQL.</p>
+      
+      <p> Projeto 2 - Portifólio Pessoal: Criação de um site Pessoal e interativo utilizando o Visual 
+        Studio Code, HTML, etc. Projeto Atual.</p>
+
+
+      </div>
+        </div>
+  
+    </section>
+
+ <!-- Contato -->
+  <section class="contato" id="contact">
+    <div class="interface">
+
+      <div class="txt-contato">
+        <h1 class = "titulo-contato">Entre em contato <span>Comigo</span></h1>
+      <p> <i class="bi bi-envelope-at"></i>mendesisabelle500@gmail.com </p>
+        <p> <i class="bi bi-whatsapp"></i>(31) 9 9730-7753 </p>
+      </div>
     </div>
   </section>
 
-  <!-- Sobre Mim -->
-  <section id="about">
-    <h2>Sobre Mim</h2>
-      <p>Tenho 19 anos e tive uma pequena oportunidade de trabalhar com projetos digitais em uma Secretaria de Educação.</p>
-      <p>Atualmente curso Análise e Desenvolvimento de Sistemas na Universidade Newton Paiva e atuo dando aulas particulares.</p>
-      <p>Meu objetivo é ingressar em um estágio na minha área, para colocar em prática o que tenho aprendido, adquirir mais conhecimento e crescer profissionalmente.</p>
-      <p>————————————————————————————————————————————————</p>
-</section>
-
-  <!-- Projetos -->
-  <section id="projects">
-    <h2>Projetos</h2>
-    <ul>
-      <li>Projeto 1 - Sistema de Gerenciamento de Livraria: 
-        <p> Sistema feito para gerenciar compras ou empréstimos de livros, usuários, funcionários, fornecedores,etc.</p>
-        <p>Feito no Intellij IDEA e integrado com o Banco de Dados MSQL.</p></li>
-        <p>————————————————————————————————————————————————</p>
-      <li>Projeto 2 - Portifólio Pessoal:
-        <p> Criação de um site Pessoal e interativo utilizando o Visual Studio Code, HTML, etc. Projeto Atual</p> </li>
-         <p>————————————————————————————————————————————————</p>
-    </ul>
-  </section>
-
-  <!-- Contato -->
-  <section id="contact">
-    <h2>Contato</h2>
-    <p>Email: mendesisabelle500@gmail.com</p>
-    <p>Telefone: (31) 9 9730-7753</p>
-    <p>GitHub: <a href="https://github.com/izzydrafts" target="_blank">https://github.com/izzydrafts</a></p>
-     <p>————————————————————————————————————————————————</p>
-  </section>
+  </main>
 
   <!-- Rodapé -->
   <footer>
+    <div class="interface">
+      <div class="logo-rodape">
+        <img src="img/avatarAtualizado.png" alt="logotipo do site" width="50">
+      </div>
+    </div>
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
   </footer>
 
