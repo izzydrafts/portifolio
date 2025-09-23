@@ -14,10 +14,11 @@
 
   <body>
    <!-- Cabeçalho com logo -->
+    
   <header>
     <div class="interface">
     <section class="logotipo-cabecalho">
-      <img src="img/newicon.png" alt="logotipo do site" width="150">
+      <img src="img/LogoEntregaFinal.png" alt="logotipo do site" >
     </section>
 
   <!-- Menu de navegação -->
@@ -35,21 +36,23 @@
 
   <main>
     <!-- Hero / Apresentação> -->
+
      <section class="hero" id="hero">
       <div class="interface">
         <div class="img hero">
-          <img src="img/avatarAtualizado.png" alt="imagem de Apresentação" width="300">
+          <img src="img/AvatarEntregaFinal.png" alt="imagem de Apresentação" width="300">
         </div>
 
         <div class="txt-hero">
-          <h1>Olá, eu sou Isabelle Mendes!<span> Seja bem vindo ao meu portifólio.</span></h1>
-          <a href="#"><button>Entre em Contato</button></a>
+          <h1>Olá, eu sou Isabelle Mendes!<span> Seja bem vindo ao meu portfólio.</span></h1>
+          <a href = "#contact"><button>Entre em Contato</button></a>
         </div>
 
       </div>
      </section>
 
      <!-- Sobre Mim> -->
+
       <section class ="sobre-mim" id="about">
         <div class = "interface">
         <div class = "txt-sobre">
@@ -70,7 +73,7 @@
         </div>
 
         <div class=" img-sobre">
-          <img src="img/avatarSobre.png" alt="imagem sobre mim" width="600">
+          <img src="img/SobreEntregaFinal.png" alt="imagem sobre mim" width="600">
         </div>
 
 
@@ -79,46 +82,93 @@
       
 
   <!-- Projetos -->
+
     <section class="projects" id="projects">
       <div class="interface">
-        <div class="meus-projetos">
-        <h1 class="titulo-seção">Meus <span> Projetos</span><i class="bi bi-laptop"></i></h1>
-      
-        <p> Projeto 1 - Sistema de Gerenciamento de Livraria: Sistema feito para gerenciar 
-        compras ou empréstimos de livros, usuários, funcionários, fornecedores,etc. Feito no Intellij IDEA
-         e integrado com o Banco de Dados MSQL.</p>
-      
-      <p> Projeto 2 - Portifólio Pessoal: Criação de um site Pessoal e interativo utilizando o Visual 
-        Studio Code, HTML, etc. Projeto Atual.</p>
+        <h1 class="titulo-seção">Meus <span> Projetos</span></h1>
 
+        <article>
+
+          <div class="box-meusprojetos">
+            <div class="icons-projetos">
+              <img src="img/IconNotebook.png" alt="icon de notebook">
+              <h2> Sistema de <span>Gerenciamento</span></h2>
+          </div>
+            <p>Aplicação desenvolvida para uma livraria, permitindo gerenciar compras ou empréstimos de livros, usuários, funcionários, fornecedores,etc. 
+            Feito no Intellij IDEA e integrado com o Banco de Dados MSQL.</p>
+          </div>
+
+          <div class="box-meusprojetos">
+            <div class="icons-projetos">
+             <img src="img/IconSite.png" alt="icon de notebook">
+              <h2> Site <span>Pessoal</span></h2>
+          </div>
+            <p> Criação de um portfólio Pessoal e interativo utilizando o Visual 
+                Studio Code, HTML, CSS,etc.</p>
+          </div>
+
+          
+          <div class="box-meusprojetos">
+            <div class="icons-projetos">
+          <img src="img/IconCalculadora.png" alt="icon de notebook">
+          <h2> Calculadora  <span>Simples</span></h2>
+          </div>
+            <p> Calculadora simples para operações básicas com interface feita em JOptionPane.
+                Implementada em Java.</p>
+          </div>
+
+          <div class="box-meusprojetos">
+            <div class="icons-projetos">
+          <img src="img/IconDesign.png" alt="icon de notebook">
+          <h2> Desings <span>Diversos</span></h2>
+          </div>
+            <p> Projetos variados de design gráfico, como criação de convites, logomarcas e banners.
+                Feitos utilizando ferramentas de edição.</p>
+          </div>
+
+        
+        </article>
 
       </div>
-        </div>
-  
     </section>
 
  <!-- Contato -->
-  <section class="contato" id="contact">
+  <section class="contato" id="contact" >
     <div class="interface">
 
       <div class="txt-contato">
         <h1 class = "titulo-contato">Entre em contato <span>Comigo</span></h1>
-      <p> <i class="bi bi-envelope-at"></i>mendesisabelle500@gmail.com </p>
-        <p> <i class="bi bi-whatsapp"></i>(31) 9 9730-7753 </p>
+        <p><i class="bi bi-envelope-at"></i>mendesisabelle500@gmail.com </p>
+        <p><i class="bi bi-whatsapp"></i>(31) 9 9730-7753 </p>
       </div>
+
+      <form action="#">
+        <input type="text" name="#" id="nome" placeholder="Seu nome completo">
+        <input type="email" name="#" id= "Email do remetente" placeholder = "Seu melhor email">
+        <input type="tel" name="#" id="telefone" placeholder="Seu telefone">
+        <textarea name="#" id="Mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+
+        <div class="btn-enviar">
+          <input type="submit" value="Enviar Mensagem">
+        </div>
+     </form>
     </div>
   </section>
+  
 
   </main>
 
   <!-- Rodapé -->
   <footer>
     <div class="interface">
+      
       <div class="logo-rodape">
-        <img src="img/avatarAtualizado.png" alt="logotipo do site" width="50">
+        <img src="img/LogoEntregaFinal.png" alt="logotipo do site" width="80">
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+
       </div>
     </div>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+  
   </footer>
 
 </body>

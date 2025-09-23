@@ -9,17 +9,14 @@
     --corRoxa: purple;
     --corBranca: white;
     --corVio: #ed96ff; 
-    --corMagenta: #c466d9;
+    --corMagenta: #b908e4;
     --corLilaz: #8d2c81;
     --corRoxoTriade: #9526c8;
+    --corLilazAtual: #c04ce1;
 }
 
 html{
     scroll-behavior: smooth;
-}
-
-body{
-    background-color:var(--corLilaz);
 }
 
 .interface{
@@ -42,20 +39,27 @@ button:hover{
     background-color: var(--corMagenta);
 
 }
+
 h1.titulo-sobre{
+    color: var(--corBranca);
     font-size: 4rem;
 
 }
 
 H1.titulo-sobre span{
-    color: var(--corMagenta);
+    color: var(--corRoxa);
 }
 
 h1.titulo-seção{
     font-size: 2.7rem;
+    color: white;
 }
 h1.titulo-seção span{
     color: var(--corRoxa);
+}
+
+h1.titulo-contato{
+    color: var(--corBranca);
 }
 
 /* estilo cabeçalho*/
@@ -75,7 +79,7 @@ header > .interface {
     justify-content: space-between;
 }
 header .logotipo-cabecalho img{
-    max-width: 180px;;
+    max-width: 140px;;
 }
 header nav.menu-navegação ul{ 
     display: flex;
@@ -101,7 +105,7 @@ header nav.menu-navegação button{
 section.hero{
 
     background-image: linear-gradient( to left, var( --corVioleta)65%, var( --corRoxa) 35%);
-    padding-top: 244px;
+    padding-top: 240px;
 }
 
 .hero > .interface{
@@ -112,7 +116,7 @@ section.hero{
 }
 
 .hero .txt-hero{
-    line-height: 0.9;
+    line-height: 1.1;
 }
 
 .hero .txt-hero h1{
@@ -142,8 +146,10 @@ section.hero{
 /* Estilo Sobre Mim*/
 section.sobre-mim{
     padding: 100px 0;
+    background-color: var(--corLilazAtual);
 
 }
+
 .sobre-mim > .interface{
     display: flex;
     align-items: center;
@@ -158,31 +164,64 @@ section.sobre-mim{
     margin: 24px 0;
 
 }
-/* Meus Projetos */
 
+/* Meus Projetos */
 
 section.projects{
     background-color: var(--corMagenta);
-    padding: 80px 0;
+    padding: 150px 0;
 
 
 }
-.projects > .interface{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 32px;
+
+.projects article{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
     
 }
 
-.projects .meus-projetos p{
+.projects .box-meusprojetos{
+    background-color: var(--corVio);
+    padding: 24px;
+    border-radius: 16px;
     color: var(--corBranca);
+}
+
+.box-meusprojetos .icons-projetos{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+
+}
+
+.box-meusprojetos .icons-projetos img{
+    max-width: 80px;
+}
+
+.icons-projetos h2{
+    color: var(--corBranca);
+}
+.icons-projetos h2 span{
+    color: var(--corRoxa);
+}
+
+.box-meusprojetos p{
+    color: var(--corBranca);
+    text-align: justify;
+    line-height: 1.4;
 }
 
 /* Estilo Contatos */
  section.contato{
     padding: 80px 0;
-   background-color: var(--corLilaz);
+   background-color: var(--corLilazAtual);
+ }
+ .contato > .interface{
+    display: flex;
+    justify-content: space-between;
  }
 .contato .txt-contato p{
     font-size: 1.2rem;
@@ -190,14 +229,53 @@ section.projects{
     align-items: center;
     gap: 16px;
     margin: 16px 0;
+    color: var(--corBranca);
 }
  .contato .txt-contato p i{
-    color: var(--corVio);
+    color: var(--corRoxa);
     font-size: 1.3rem;
  }
 
  .contato .txt-contato span{
+    color: var(--corRoxa);
+ }
+
+ .contato form{
+    width: 50%;
+ }
+
+ .contato form input, .contato form textarea{
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: 2px solid var(--corRoxa);
+    outline: none;
+    color: var(--corBranca);
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    
+ }
+
+ .contato form textarea{
+    resize: none;
+    height: 150px;
+
+ }
+
+ .contato form .btn-enviar input{
+   border-color: var(--corBranca);
+   transition: .5s;
+   cursor: pointer;
+   font-weight: 400;
+   font-size: 1.2rem;
+ }
+
+ .contato form .btn-enviar input:hover{
+    background-color: var(--corRoxa);
     color: var(--corVio);
+    border-color: var(--corVio);
+
  }
 
  footer{
@@ -207,8 +285,9 @@ section.projects{
  }
  footer > .interface{
     display: flex;
-    justify-content: space-between;
+    color: var(--corBranca);
  }
+
 
  
 
