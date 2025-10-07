@@ -23,10 +23,11 @@
 
   <!-- Menu de navegação -->
   <nav class=" menu-navegação">
-    <ul>
+    <ul> 
       <li><a href="#hero">Início</a></li>
       <li><a href="#about">Sobre Mim</a></li>
-      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+       <li><a href="#projects">Projetos</a></li>
       <li><a href="#contact"><button>Contato</button></a></li>
   </ul>
 </nav>
@@ -80,12 +81,49 @@
         </div>
       </section>
       
+      <!-- Habilidades -->
+<section class="habilidades" id="skills">
+  <div class="interface">
+    <h1 class="titulo-habilidades">Minhas <span>Habilidades</span></h1>
+    <div id="lista-habilidades" class="lista-habilidades">
+      
+      <script>
+
+const habilidades = [
+  { nome: "HTML5", nivel: "Avançado", icone: "bi bi-filetype-html" },
+  { nome: "CSS3", nivel: "Avançado", icone: "bi bi-filetype-css" },
+  { nome: "JavaScript", nivel: "Básico", icone: "bi bi-filetype-js" },
+  { nome: "Java", nivel: "Intermediário", icone: "bi bi-cup-hot" },
+  { nome: "MySQL", nivel: "Básico", icone: "bi bi-database" }
+];
+
+
+const container = document.getElementById("lista-habilidades");
+
+habilidades.forEach(hab => {
+  const card = document.createElement("div");
+  card.classList.add("card-habilidade");
+  
+  card.innerHTML = `
+    <i class="${hab.icone}"></i>
+    <h3>${hab.nome}</h3>
+    <p>Nível: ${hab.nivel}</p>
+  `;
+  
+  container.appendChild(card);
+});
+ </script>
+    </div>
+  </div>
+</section>
+
 
   <!-- Projetos -->
 
     <section class="projects" id="projects">
       <div class="interface">
         <h1 class="titulo-seção">Meus <span> Projetos</span></h1>
+
 
         <article>
 
@@ -126,8 +164,25 @@
                 Feitos utilizando ferramentas de edição.</p>
           </div>
 
-        
         </article>
+
+        <div class="projetos-caixa">
+          <div class="projetos-card">
+            <img src="img/Dia do livro story.gif" alt="projeto livraria" width="100" class="projetos-imagem">
+            <h3 class="info-projetos">Tela Inicial: Sistema de Gerenciamento Livraria</h3>
+          </div>
+      
+          <div class="projetos-card">
+            <img src="img/CreativePortfolio.png" alt="projeto portfolio" width="100" class="projetos-imagem">
+            <h3 class="info-projetos">Portfólio Pessoal</h3>
+          </div>
+          <div class="projetos-card">
+            <img src="img/Calculadora.gif" alt="projeto calculadora" width="100" class="projetos-imagem">
+            <h3 class="info-projetos">Tela inical: Calculadora Simples</h3>
+          </div>
+
+        </div>
+
 
       </div>
     </section>
@@ -170,6 +225,8 @@
     </div>
   
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
