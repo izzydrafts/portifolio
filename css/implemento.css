@@ -84,7 +84,6 @@ header{
 }
 
 
-
 header > .interface {
     display: flex;
     align-items: center;
@@ -176,7 +175,6 @@ section.sobre-mim{
     margin: 24px 0;
 
 }
-
 /*Minhas Habilidades */
 section.habilidades{
   font-size: 1.1rem;
@@ -311,15 +309,10 @@ section.projects{
 
 }
 .info-projetos {
-    color: white;      /* título branco */
-    font-size: 1.1rem; /* ajusta o tamanho se quiser */
+    color: white;     
+    font-size: 1.1rem; 
     margin-top: 0.5rem;
-    text-align: center; /* centraliza o texto */
-}
-
-.projetos-card:hover{
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
-    transform: translateY(-10px); scale:(1.03);
+    text-align: center; 
 }
 
 

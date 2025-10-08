@@ -1,0 +1,106 @@
+@media(max-width: 900px){
+
+    h1.titulo-section{
+        font-size: 3rem;
+    }
+    /*estilo menu*/ 
+    header{
+        background-image: none;
+        background-color: var(--corRoxa);
+
+    }
+    
+    .menu-navegação{
+        display: none;
+    }
+
+    /*estilo da hero*/ 
+   section.hero{
+
+    background-image: linear-gradient( to top, var( --corVioleta)90%, var( --corRoxa) 10%);
+}
+
+.hero > .interface{
+    gap: 95px;
+    flex-direction: column-reverse;
+    text-align: center;
+
+}
+
+.hero .txt-hero h1{
+    font-size: 2rem;
+
+}
+.hero .txt-hero h1 span{
+    font-size: 2.5rem;
+}
+
+.hero .txt-hero p{
+    font-size: 1rem;
+}
+
+.hero .img-hero {
+    max-width: 320px;
+}
+
+/*estilo sobre mim*/
+.sobre-mim > .interface{
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sobre-mim .img-sobre img{
+    max-width: 450px;
+}
+.sobre-mim .txt-sobre p{
+    font-size: 1.2rem;
+
+}
+/*estilo habilidades*/ 
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    max-width: 700px; 
+    margin: 0 auto; 
+}
+
+/*Estilo projetos*/
+.projects article{
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr; 
+}
+
+.projetos-caixa{
+ 
+    grid-template: 1fr 1fr 1fr/ 1fr; 
+    max-width: 1200px;
+    padding: 1rem;
+}
+.projects article {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 40px; 
+    
+}
+/*estilo contato*/
+ .contato > .interface{
+    flex-direction: column;
+    gap: 32px;
+ }
+
+
+ .contato form{
+    width: 100%;
+ }
+ /*estilo rodapé*/
+ footer > .interface{
+    flex-direction: column-reverse;
+    gap:32px;
+    text-align: center;
+    font-size: 1.2rem;
+ }
+
+
+}
