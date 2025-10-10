@@ -20,9 +20,13 @@ Breve descrição pessoal e profissional, destacando minha formação, experiên
 
 Seção dinâmica gerada via JavaScript, listando tecnologias e linguagens com ícones e níveis de domínio:
 HTML5
+
 CSS3
+
 JavaScript
+
 Java
+
 MySQL
 
 💼 Projetos
@@ -44,10 +48,16 @@ GitHub: (https://github.com/izzydrafts)
 🛠️ Tecnologias Utilizadas
 
 HTML5 — estrutura do site
+
 CSS3 — estilização e responsividade
+
 JavaScript — interação dinâmica (habilidades)
+
 Bootstrap Icons — ícones profissionais e intuitivos
+
 Google Fonts (Lora) — tipografia personalizada
+
+EmailJS — envio de mensagens de contato direto pelo formulário do site
 
 💻 Design e Responsividade
 
