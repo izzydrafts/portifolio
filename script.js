@@ -8,6 +8,7 @@ const habilidades = [
   { nome: "MySQL", nivel: "Básico", icone: "bi bi-database" }
 ];
 
+
 const container = document.getElementById("lista-habilidades");
 
 habilidades.forEach(hab => {
@@ -24,7 +25,6 @@ habilidades.forEach(hab => {
 });
 
 /*Contato com Email JS*/
-
 
 emailjs.init("SnfuqXUltn3DY_bwK"); 
 
