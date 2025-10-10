@@ -60,7 +60,7 @@ Boas práticas de usabilidade e contraste
 O site foi publicado no GitHub Pages, podendo ser acessado através do link:
 
 🔗 Clique aqui para acessar o site publicado
-(https://izzydrafts.github.io/)
+(https://izzydrafts.github.io/portifolio/)
 
 O código-fonte completo está disponível no repositório:
 📁 Acessar repositório no GitHub
