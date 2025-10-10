@@ -85,7 +85,4 @@ O código-fonte completo está disponível no repositório:
 
 ---
 
----
 
-Se quiser, posso **ajustar o README** com os **links reais do seu GitHub Pages e repositório** (quando você me enviar).
-Quer que eu formate o texto em versão **com emojis e cores leves para o GitHub**, deixando ele mais visual e agradável?
