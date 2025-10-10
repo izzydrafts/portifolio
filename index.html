@@ -46,7 +46,7 @@
         </div>
 
         <div class="txt-hero">
-          <h1>Olá, eu sou Isabelle Mendes!<span> Seja bem vindo ao meu portfólio.</span></h1>
+          <h1>Olá, eu sou Isabelle Mendes!<span> Seja bem vindo ao meu Portfólio.</span></h1>
           <a href = "#contact"><button>Entre em Contato</button></a>
         </div>
 
@@ -87,33 +87,6 @@
   <div class="interface">
     <h1 class="titulo-habilidades">Minhas <span>Habilidades</span></h1>
     <div id="lista-habilidades" class="lista-habilidades">
-      
-      <script>
-
-const habilidades = [
-  { nome: "HTML5", nivel: "Avançado", icone: "bi bi-filetype-html" },
-  { nome: "CSS3", nivel: "Avançado", icone: "bi bi-filetype-css" },
-  { nome: "JavaScript", nivel: "Básico", icone: "bi bi-filetype-js" },
-  { nome: "Java", nivel: "Intermediário", icone: "bi bi-cup-hot" },
-  { nome: "MySQL", nivel: "Básico", icone: "bi bi-database" }
-];
-
-
-const container = document.getElementById("lista-habilidades");
-
-habilidades.forEach(hab => {
-  const card = document.createElement("div");
-  card.classList.add("card-habilidade");
-  
-  card.innerHTML = `
-    <i class="${hab.icone}"></i>
-    <h3>${hab.nome}</h3>
-    <p>Nível: ${hab.nivel}</p>
-  `;
-  
-  container.appendChild(card);
-});
- </script>
     </div>
   </div>
 </section>
@@ -189,6 +162,7 @@ habilidades.forEach(hab => {
     </section>
 
  <!-- Contato -->
+  
   <section class="contato" id="contact" >
     <div class="interface">
 
@@ -198,16 +172,15 @@ habilidades.forEach(hab => {
         <p><i class="bi bi-whatsapp"></i>(31) 9 9730-7753 </p>
       </div>
 
-      <form action="#">
-        <input type="text" name="#" id="nome" placeholder="Seu nome completo">
-        <input type="email" name="#" id= "Email do remetente" placeholder = "Seu melhor email">
-        <input type="tel" name="#" id="telefone" placeholder="Seu telefone">
-        <textarea name="#" id="Mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+      <form id="contact-form">
+  <input type="text" name="user_name" placeholder="Seu nome completo" required>
+  <input type="email" name="user_email" placeholder="Seu melhor email" required>
+  <textarea name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
 
-        <div class="btn-enviar">
-          <input type="submit" value="Enviar Mensagem">
-        </div>
-     </form>
+  <div class="btn-enviar">
+    <input type="submit" value="Enviar Mensagem">
+  </div>
+</form>
     </div>
   </section>
   
@@ -227,6 +200,10 @@ habilidades.forEach(hab => {
   
   </footer>
 
+<!-- Biblioteca EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- JS principal -->
   <script src="script.js"></script>
 
 </body>
